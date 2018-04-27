@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView image;
     Button botao;
     ProgressBar pb;
-    WeakReference<ImageView> weakReference;
+    WeakReference weakReference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         botao = findViewById(R.id.button);
         image = findViewById(R.id.imageView);
         pb = findViewById(R.id.progressBar);
-        weakReference = new WeakReference<ImageView>(image);
+        weakReference = new WeakReference(image);
 
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
